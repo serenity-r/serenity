@@ -1,17 +1,17 @@
 Package: serenity
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Title: Serenity: Data Science in the Classroom
+Version: 0.0.0.9000
+Date: 2017-9-18
+Authors@R: person("M. Drew", "LaMar", email = "mdlama@wm.edu", role = c("aut", "cre"))
+Description: A platform-independent browser-based interface to data science tools for the classroom.
 Depends:
     R (>= 3.4.0)
 Imports:
     shiny (>= 1.0.5),
     shinydashboard (>= 0.6.1),
     phosphorr (>= 0.0.0.9000)
+URL: https://github.com/serenity-r/serenity
 License: AGPL-3
 Encoding: UTF-8
 LazyData: true
