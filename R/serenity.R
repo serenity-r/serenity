@@ -5,7 +5,7 @@
 #'
 #' @name serenity
 #' @docType package
-#' @import shiny shinydashboard
+#' @import shiny shinydashboard phosphorr
 NULL
 
 ## Launch function ----
@@ -17,6 +17,7 @@ NULL
 #' \dontrun{
 #' serenity::serenity()
 #' }
+#' @import shiny
 #' @export
 serenity <- function() {
   message("Starting Serenity ...")
@@ -24,5 +25,7 @@ serenity <- function() {
     if (!suppressMessages(require(serenity)))
       stop("Calling serenity start function but serenity is not installed.")
   }
-  shiny::runApp(system.file("app", package = "serenity"), launch.browser = TRUE)
+
+  shiny::shinyApp(ui = ui(),
+                  server = server)
 }
