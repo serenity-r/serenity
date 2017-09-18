@@ -1,5 +1,7 @@
 #' UI for Serenity
 #'
+#' @import phosphorr
+#'
 #' @return An HTML tag object that can be rendered as HTML using as.character().
 #'
 ui <- function() {
